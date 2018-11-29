@@ -1,0 +1,72 @@
+*{	
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+
+/*Estilos para el boton de inicio de sesion */
+.entrar{
+	margin-top:10px;
+	margin-left: 5px;
+
+}
+
+/*Fin*/
+
+body{
+	padding-top: 70px;
+	background-size: 100%;
+}
+
+
+/*Estilos para el pie de pagina*/
+
+.pie{
+	position: fixed;
+	bottom: 0;
+}
+
+
+/*estilo para el contenedor del modal login*/
+.contenedor-registro{
+	width: 95%;
+	min-width: 280px;
+	max-width: 350px;
+	margin: 50px auto;
+	background: #fff;
+	padding-bottom: 10px;
+	border: 1px solid #337AB7;
+	border-radius: 5px;
+
+}
+
+/*estilo para en encabezado del modal para el login*/
+.contenedor-header{
+
+}
+
+
+.login{
+		width: 100%;
+		min-width: 240px;
+		max-width: 350px;
+		background: #fff;
+		padding-bottom: 10px;
+		border-radius: 5px;
+		
+	}
+
+
+/*Estilos para el slideshow*/
+.slideIMG{
+	margin:0 auto;
+	width: 70%;
+	min-height: 200px;
+	max-height: 500px;
+}
+
+.caruselIMG{
+	margin:0 auto;
+}
+/*Fin*/
