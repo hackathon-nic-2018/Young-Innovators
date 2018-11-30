@@ -4,11 +4,11 @@ session_start();
       header("location:../../index.php");
   }
 
-  if (!isset($_POST['nombre'])) {
+  if (!isset($_POST['nombres'])) {
     header("location:../../index.php");
   }
 
-include('../conexion/conexion.php');
+include('../connection/conect.php');
 $id = $_POST['id_usuario'];
 $dato1 = strtolower($_POST['nombres']);
 $nombres=mysqli_real_escape_string($conexion, ucwords($dato1));
@@ -33,7 +33,7 @@ if ($id==38) {
 }elseif (empty($_POST['nombres']) || empty($_POST['apellidos']) || empty($_POST['usuario'])) {
 	$error= "<script>alertify.alert('Alerta!','Los campos nombres, apellidos, fecha_nacimiento,usuario,estado y tipo , son requeridos')</script>";
 
-}eelseif (strlen($nombres)>50){
+}elseif (strlen($nombres)>50){
 	$error= "<script>alertify.alert('Alerta!','El campo nombres no debe contener una cadena mayor a 50 caracteres')</script>";
 }elseif (strlen($apellidos)>50) {
 	$error= "<script>alertify.alert('Alerta!','El campo apellidos no debe contener una cadena mayor a 50 caracteres')</script>";

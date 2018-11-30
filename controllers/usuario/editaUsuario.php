@@ -24,12 +24,11 @@ $datos = array(
 				3 => $valores2['telefono'],
 				4 => $valores2['correo'],
 				5 => $valores2['usuario'],
-				6 => $valores2['clave'],
-				7 => $valores2['direccion'], 
-				8 => $valores2['descripcion'],
-				9 => $valores2['tipo'],
-				10 => $valores2['estado'],
-				11 => $valores2['imagen'],
+				6 => $valores2['direccion'], 
+				7 => $valores2['descripcion'],
+				8 => $valores2['tipo'],
+				9 => $valores2['estado'],
+				
 				);
 echo json_encode($datos);
 

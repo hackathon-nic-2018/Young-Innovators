@@ -8,6 +8,9 @@
 <body>
 	<?php include_once 'includes/header.php';?>
 
+<section  style="background-image: url(assets/img/fondo.jpg);">
+	<div  style="height: 100%; background-clip: ">
+
 	<div class="container">
 
 			<!-- Slide show -->
@@ -96,7 +99,7 @@
 
 	</div>
 
-	
+	</section>
 	<?php include_once 'includes/footer.php';?>
 
 	<?php include_once 'includes/js.php';?>

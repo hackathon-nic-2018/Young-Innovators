@@ -17,7 +17,7 @@
 				<li><a href=""><b id="menu-text"><i class="fa fa-home"></i> Inicio</b></a></li>
 				<li><a href=""><b id="menu-text"><i class="fa fa-home"></i> productos</b></a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b id="menu-text"><i class="fa fa-cog"></i> Opcion 1 <span class="caret"></span></b>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b id="menu-text"><i class="fa fa-cog"></i> Compra <span class="caret"></span></b>
 					</a>
 
 					<ul class="dropdown-menu">
@@ -29,7 +29,7 @@
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b id="menu-text"><i class="fa fa-cog"></i> Opcion 2 <span class="caret"></span></b>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b id="menu-text"><i class="fa fa-cog"></i> Nosotros <span class="caret"></span></b>
 					</a>
 
 					<ul class="dropdown-menu">

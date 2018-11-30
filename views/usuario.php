@@ -127,10 +127,10 @@
 							<input class="form-control input-oculto" type="text" required="required" readonly id="id_usuario" name="id_usuario" readonly="readonly" style="visibility:hidden; height:1px;"/>
 
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Nombres</label><input type="text" required="required" name="nombre" class="form-control" id="edinombre">
+							<label>Nombres</label><input type="text" required="required" name="nombres" class="form-control" id="edinombre">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">			
-							<label>Apellidos</label><input type="text" required="required" name="apellido" class="form-control" id="ediapellido">
+							<label>Apellidos</label><input type="text" required="required" name="apellidos" class="form-control" id="ediapellido">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Sexo</label>
@@ -148,9 +148,7 @@
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Usuario</label><input type="text" name="usuario" class="form-control" id="ediusuario">
 						</div>
-						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Clave</label><input type="password" required="required" name="clave" class="form-control" id="ediclave">
-						</div>
+					
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Direccion</label><input type="text" required="required" name="direccion" class="form-control" id="edidireccion">
 						</div>
@@ -167,7 +165,7 @@
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Estado</label>
-							<select name="estado" id="ediestado" class="selectpicker">
+							<select name="estado" id="ediestado" class="form-control">
 								<option value ="1">Activo</option>
 								<option value ="0">Desactivado</option>	
 							</select>

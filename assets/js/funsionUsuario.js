@@ -159,14 +159,14 @@ function editarUsuario(id){
 				$('#id_usuario').val(id);
 				$('#edinombre').val(datos[0]);
 				$('#ediapellido').val(datos[1]);
-				$('#edisexo').val(datos[3]);
-				$('#editelefono').val(datos[2]);
-				$('#edicorreo').val(datos[5]);
-				$('#ediusuario').val(datos[7]);
-				$('#edidireccion').val(datos[8]);
-				$('#edidescripcion').val(datos[4]);
-				$('#editipo').val(datos[9]);
-				$('#ediestado').val(datos[4]);
+				$('#edisexo').val(datos[2]);
+				$('#editelefono').val(datos[3]);
+				$('#edicorreo').val(datos[4]);
+				$('#ediusuario').val(datos[5]);
+				$('#edidireccion').val(datos[6]);
+				$('#edidescripcion').val(datos[7]);
+				$('#editipo').val(datos[8]);
+				$('#ediestado').val(datos[9]);
 				$('#ediModUsuario').modal({
 					show:true,
 					backdrop:'static'

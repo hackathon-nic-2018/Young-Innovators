@@ -44,7 +44,7 @@
 	function salir(){
 	alertify.confirm('Cerrar sesion','¿Seguro que quieres salir?', function(e){
 		if(e){
-			$(location).attr('href','../controladores/login/logout.php');
+			$(location).attr('href','../controllers/login/logout.php');
 
 		}else{
 			return false;
