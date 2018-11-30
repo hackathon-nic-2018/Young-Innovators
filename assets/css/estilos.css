@@ -70,3 +70,17 @@ body{
 	margin:0 auto;
 }
 /*Fin*/
+
+
+/*estilos para el logo en el encabezado*/
+#logo{
+	height: 50px;
+	width: 160px;
+}
+
+#content_log{
+	margin: 0;
+	padding: 0;
+}
+
+/*Fin*/

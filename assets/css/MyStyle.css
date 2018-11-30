@@ -1,0 +1,855 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+
+}
+
+ 
+ /* reglas para quitar los estilos agredados por bootstrap a los enlaces*/
+a{
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
+}
+
+a:hover{
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
+}
+
+a:link{
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
+}
+
+a:visited{
+	color: rgba(255,255,255,1.00);
+}
+/*Fin*/
+
+#barra{
+	height: 14px;
+	font-size: 11px;
+	width: 110px;
+}
+.oculto {
+  display: none;
+}
+progress {
+  text-align: center;
+}
+progress:after {
+  content: attr(value)'%';
+}
+
+.ok{
+	text-align: center;
+	margin: 10px auto;
+	width: 96%;
+	background-color: #EC971F;
+	color: rgba(255,255,255,1.00);
+	padding: 3px 3px;
+	border-radius: 10px;
+}
+
+/*Estilos Para telefonos Smartphone*/
+@media screen and (min-width: 280px) and (max-width:729px){ 
+	
+	body{
+		background-color: #ECF0F5;
+	}	
+	
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #367FA9;
+	color: #fff;
+	z-index: 5;
+}
+
+
+/*Estilos para el Icono de menu y el texto del encabezado*/
+.encabezado label{
+	position: relative;
+	z-index: 1000;
+	color: rgba(49,44,44,1.00);
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 25px;
+
+
+}
+	
+	.encabezado p{
+	padding-left: 0px;
+	float: left;
+	margin-top: 12px;
+	font-size: 20px;
+	}
+
+/*Fin*/
+
+/*Estilos para el nombre y foto de usuario en el encabezado*/
+	
+	#foto-usuario {
+		display: inline-block;
+		width: 25px;
+		height:25px;
+		margin-right: 3px;
+		margin-bottom: 10px;
+	}
+	
+	#nombre-usuario{
+		display: none;
+	}
+	
+	.logout{
+		color: rgba(212,212,212,1.00);
+		margin-top: 13px;
+		margin-right: 7px;
+		float: right;
+	}
+	
+	
+	
+/*Fin*/
+
+	
+	#largo{
+		display: none;
+	}
+	
+.menu-lateral{
+	z-index: 4;
+	padding-bottom: 92px;
+	color: #fff;
+	overflow-y: auto;
+	transition: all 300ms;
+	position: fixed;
+	left: -230px;
+	top: 50px;
+	width: 230px;
+	height: 100%;
+	background-color: rgba(49,44,44,1.00);
+	float: left;	
+}
+	
+/*Acordeon*/
+ul {
+	list-style-type: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+ .accordion {
+ 	width: 100%;
+ 	max-width: 230px;
+ 	background-color: rgba(49,44,44,1.00);
+ }
+
+.accordion .link:hover {
+	border-left: solid blue 2px;
+}
+
+.accordion .link {
+	border-left: solid rgba(49,44,44,1.00) 2px;
+	cursor: pointer;
+	display: block;
+	padding: 12px 12px 12px 35px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.accordion li i {
+	color: rgba(70,239,131,0.72);
+	position: absolute;
+	top: 13px;
+	left: 12px;
+	font-size: 18px;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	color: rgba(255,255,255,255.72);
+	right: 12px;
+	left: auto;
+	font-size: 15px;
+}
+
+.accordion li.open .link {
+	color: #ffffff;
+}
+
+.accordion li.open i {
+	color: rgba(70,239,131,0.72);
+}
+.accordion li.open i.fa-chevron-down {
+	color: rgba(255,255,255,255.72);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: rgba(55,50,50,0.87);
+ 	font-size: 13px;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	padding-left: 35px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+
+/*Fin Acordeon*/
+
+	.mostrar-menu{
+		left: 0px;
+	}
+	
+	/*Estilo para el contenedor principal*/
+	.principal{
+	padding:5px;
+	width: 100%;
+	text-align: justify;
+	
+	}
+	
+
+/*Estilo para el pie de pagina*/
+.pie{
+	z-index: 5;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 8px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	
+	
+}
+
+	/*Estilo para el aviso al registrar o editar un registro*/
+	.bien{
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+	background-color: #EC971F;
+	color: rgba(255,255,255,1.00);
+	padding: 5px 10px;
+	border-radius: 10px;
+	}
+	
+	/*estilo para los imputs que contienen el id de los registros*/
+	.id{
+		display: none;
+	}
+	/*Fin*/
+
+
+	/*Estilos para el dropdown-menu de bootstrap en la barra menu*/
+	  
+		.drop{
+		padding: 0px;
+		background-color: rgba(49,44,44,0.90);
+		width: 230px;
+
+	}
+	
+	.contenido-dropdown{
+		margin: 5px auto;
+		width: auto;
+		height: 40px;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		
+	}
+
+	.pies-dropdown{
+		background-color: rgba(224,211,211,1.00);
+		width: 100%;
+		height: 40px;
+		padding: 2px 3px;
+		
+	}
+	
+	.dropdown-header{
+		margin: 5px auto;
+		width: 100px;
+		height: auto;
+		text-align: center;
+	}
+
+	#dropdown-img{
+		margin: 0 auto;
+		border: solid 3px rgba(199,75,187,0.93);
+		width: 60px;
+		height: 60px;
+	}
+	/*Fin*/
+
+
+}
+/*Fin*/
+
+
+
+
+/*Estilos Para Tablets y Pc portatiles pequeños*/
+@media screen and (min-width:730px ) and (max-width:1024px ){ 
+	
+	body{
+		background-color: #ECF0F5;
+	}	
+
+header{
+	z-index: 5;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #367FA9;
+	color: #fff;
+}
+
+
+/*Estilos para el Icono de menu y el texto del encabezado*/	
+.encabezado label{
+	display: none;
+	float: left;
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 30px;
+
+}
+	
+	.encabezado p{
+	margin-left: 10px;
+	float: left;
+	margin-top: 9px;
+	font-size: 23px;
+	}
+	/*Fin*/
+	
+/*Estilos para el nombre y foto de usuario en el encabezado*/
+	#foto-usuario {
+		display: inline-block;
+		width: 25px;
+		height:25px;
+		margin-right: 5px;
+	}
+	
+   .logout{
+		color: rgba(212,212,212,1.00);
+		padding: 13px 5px;
+		float: right;
+		height: 50px;
+		
+	}
+
+	.logout:hover{
+		background-color: #3C8DBC;
+	}
+	
+	.caret{
+		margin-left: 7px;
+	}
+	/*Fin*/
+
+	
+	#corto{
+		display: none;
+	}
+	
+.menu-lateral{
+	z-index: 1;
+	overflow-y:auto;
+	position: fixed;
+	top: 50px;
+	padding-bottom: 100px;
+	width: 230px;
+	height: 100%;
+	background-color: rgba(49,44,44,1.00);
+	float: left;
+}
+	
+	
+/*Acordeon*/
+ul {
+	list-style-type: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+ .accordion {
+ 	width: 100%;
+ 	max-width: 230px;
+ 	background-color: rgba(49,44,44,1.00);
+ }
+
+.accordion .link:hover {
+	border-left: solid blue 2px;
+}
+
+.accordion .link {
+	border-left: solid rgba(49,44,44,1.00) 2px;
+	cursor: pointer;
+	display: block;
+	padding: 12px 12px 12px 35px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.accordion li i {
+	color: rgba(70,239,131,0.72);
+	position: absolute;
+	top: 13px;
+	left: 12px;
+	font-size: 18px;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	color: rgba(255,255,255,255.72);
+	right: 12px;
+	left: auto;
+	font-size: 15px;
+}
+
+.accordion li.open .link {
+	color: #ffffff;
+}
+
+.accordion li.open i {
+	color: rgba(70,239,131,0.72);
+}
+.accordion li.open i.fa-chevron-down {
+	color: rgba(255,255,255,255.72);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: rgba(55,50,50,0.87);
+ 	font-size: 13px;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	padding-left: 35px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+
+/*Fin Acordeon*/
+	
+	.principal{
+	background-color: #ECF0F5;
+	padding-left: 235px;
+	padding-top: 5px;
+	padding-right: 5px;
+	width: 100%;
+	text-align: justify;
+	
+	}
+
+/*estilo para el pie de pagiina*/
+.pie{
+	z-index: 5;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 16px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	
+	
+}
+	
+	/*estilo para el aviso al registrar o editar un registro*/
+	.bien{
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+	background-color: #EC971F;
+	color: rgba(255,255,255,1.00);
+	padding: 5px 10px;
+	border-radius: 10px;
+	}
+	
+	/*estilo para el input que contiene el id de los registros en los formularios*/
+	.id{
+		display: none;
+	}
+
+	/*Estilos para el dropdown-menu de bootstrap en la barra menu*/
+	  
+		.drop{
+		padding: 0px;
+		background-color: rgba(49,44,44,0.90);
+		width: 230px;
+
+	}
+	
+	.contenido-dropdown{
+		margin: 5px auto;
+		width: auto;
+		height: 40px;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		
+	}
+
+	.pies-dropdown{
+		background-color: rgba(224,211,211,1.00);
+		width: 100%;
+		height: 40px;
+		padding: 2px 3px;
+		
+	}
+	
+	.dropdown-header{
+		margin: 5px auto;
+		width: 100px;
+		height: auto;
+		text-align: center;
+	}
+
+	#dropdown-img{
+		margin: 0 auto;
+		border: solid 3px rgba(199,75,187,0.93);
+		width: 60px;
+		height: 60px;
+	}
+	/*Fin*/
+
+}
+
+
+/*Estilos Para Pc o dispositivos grandes*/ 
+@media screen and (min-width:1025px) and (max-width:6000px){	
+	
+	body{
+		background-color: #ECF0F5;
+	}	
+	
+header{
+	z-index: 5;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #367FA9;
+	color: #fff;
+}
+
+/*Estilos para el Icono de menu y el texto del encabezado*/
+.encabezado label{
+	display: none;
+	color: rgba(35,2,248,1.00);
+    float: left;
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 30px;
+
+}
+	
+.encabezado p{
+	margin-left: 10px;
+	float: left;
+	margin-top: 9px;
+	font-size: 23px;
+	}
+	/*Fin*/
+
+
+/*Estilos para el nombre y foto de usuario en el encabezado*/
+	#foto-usuario {
+		display: inline-block;
+		width: 25px;
+		height:25px;
+		margin-right: 5px;
+	}
+	
+	.logout{
+		color: rgba(212,212,212,1.00);
+		padding: 13px 5px;
+		float: right;
+		height: 50px;
+		
+	}
+
+	.logout:hover{
+		background-color: #3C8DBC;
+	}
+	
+	.caret{
+		margin-left: 7px;
+	}
+	
+	/*Fin*/
+
+
+	#corto{
+		display: none;
+	}
+	
+	
+.menu-lateral{
+	z-index: 1;
+	overflow: auto;
+	padding-bottom: 92px;
+	color: #fff;
+	position: fixed;
+	top: 50px;
+	width: 230px;
+	height: 100%;
+	background-color: rgba(49,44,44,1.00);
+	float: left;
+	
+}
+	
+/*Acordeon*/
+	ul {
+	list-style-type: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+ .accordion {
+ 	width: 100%;
+ 	max-width: 230px;
+ 	background-color: rgba(49,44,44,1.00);
+ }
+
+.accordion .link:hover {
+	border-left: solid blue 2px;
+}
+
+.accordion .link {
+	border-left: solid rgba(49,44,44,1.00) 2px;
+	cursor: pointer;
+	display: block;
+	padding: 12px 12px 12px 35px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.accordion li i {
+	color: rgba(70,239,131,0.72);
+	position: absolute;
+	top: 13px;
+	left: 12px;
+	font-size: 18px;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	color: rgba(255,255,255,255.72);
+	right: 12px;
+	left: auto;
+	font-size: 15px;
+}
+
+.accordion li.open .link {
+	color: #ffffff;
+}
+
+.accordion li.open i {
+	color: rgba(70,239,131,0.72);
+}
+.accordion li.open i.fa-chevron-down {
+	color: rgba(255,255,255,255.72);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: rgba(55,50,50,0.87);
+ 	font-size: 13px;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding-top: 8px;
+ 	padding-bottom: 8px;
+ 	padding-left: 35px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+
+/*Fin Acordeon*/
+	
+.principal{
+	background-color: #ECF0F5;
+	padding-left: 235px;
+	padding-top: 5px;
+	padding-right: 5px;
+	width: 100%;
+	text-align: justify;
+	
+	}
+	
+    
+	
+/*estilo para el pie de pagina*/	
+.pie{
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 16px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	z-index: 5;
+	
+}
+	
+	
+/*estilo para el aviso al registrar o editar un registro*/
+	.bien{
+	text-align: center;
+	margin: 0 auto;
+	width: 60%;
+	background-color: #EC971F;
+	color: rgba(255,255,255,1.00);
+	padding: 5px 10px;
+	border-radius: 10px;
+	}
+	
+	/*estilo para el input de id de los formularios de registro*/
+	.id{
+		display: none;
+	}
+
+
+/*Estilos para el dropdown-menu de bootstrap en la barra menu*/
+	  
+		.drop{
+		padding: 0px;
+		background-color: rgba(49,44,44,0.90);
+		width: 230px;
+
+	}
+	
+	.contenido-dropdown{
+		margin: 5px auto;
+		width: auto;
+		height: 40px;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		
+	}
+
+	.pies-dropdown{
+		background-color: rgba(224,211,211,1.00);
+		width: 100%;
+		height: 40px;
+		padding: 2px 3px;
+		
+	}
+	
+	.dropdown-header{
+		margin: 5px auto;
+		width: 100px;
+		height: auto;
+		text-align: center;
+	}
+
+	#dropdown-img{
+		margin: 0 auto;
+		border: solid 3px rgba(199,75,187,0.93);
+		width: 60px;
+		height: 60px;
+	}
+	/*Fin*/
+	
+}

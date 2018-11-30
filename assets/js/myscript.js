@@ -9,38 +9,14 @@ $('#ModLogin').modal({
 });
 /*Fin*/
 
-$('#formulario-login').submit(function(e){
-	e.preventDefault();
 
-	$.ajax({
-		url: 'controllers/login/login.php',
-		method: 'post',
-		data: $('#formulario-login').serialize(),
-		beforeSend: function(){
-
-
-		},
-
-		success: function(dt){
-			var data = eval(dt);
-
-			alertify.alert('Alerta', `${data[0]} ${data[1]}`);
-
-		}
-
-	});
-});
-
-
-
-
-/*Funsion para el login
+/*Funsion para el login*/
   $('#formulario-login').submit(function(e){
     e.preventDefault();
 
-    var url = "controladores/login/login.php";
-      var user = $('#user').val();
-      var pass = $('#pass').val();
+    var url = "controllers/login/login.php";
+      var user = $('#usuario').val();
+      var pass = $('#clave').val();
       if($.trim(user).length > 0 && $.trim(pass).length > 0){
         $.ajax({
           url:url,
@@ -54,7 +30,7 @@ $('#formulario-login').submit(function(e){
             setTimeout(function(){
             $('.icocargando').css('visibility', 'hidden');
             if (data=="1") {
-              $(location).attr('href','vistas/inicio.php');
+              $(location).attr('href','views/inicio.php');
 
             } else {
               if (data=="0") {
@@ -74,4 +50,4 @@ $('#formulario-login').submit(function(e){
       	alertify.alert('Alerta', 'Los campos son obligatorios');
       }
 
-  }); */
+  });

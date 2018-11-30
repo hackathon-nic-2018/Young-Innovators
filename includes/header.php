@@ -9,12 +9,13 @@
 				<span class="icon-bar"></span>
 			</button>
 			<button id="login" class="entrar pull-left btn btn-primary btn-sm">Entrar</button>
-			<a href="#" class="navbar-brand">Tesoros del Caribe</a>	
+			<a id="content_log" href="#" class="navbar-brand"><img id="logo" src="assets/img/Logo/logotc.png"></a>	
 		</div>
 
 		<div class="collapse navbar-collapse menu-collapse" id="menu">
 			<ul class="nav navbar-nav">
 				<li><a href=""><i class="fa fa-home"></i> <b>Inicio</b></a></li>
+				<li><a href=""><i class="fa fa-home"></i> <b>productos</b></a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b><i class="fa fa-cog"></i> Opcion 1 <span class="caret"></span></b>
 					</a>
