@@ -9,7 +9,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<button id="login" class="entrar pull-left btn btn-primary btn-sm">Entrar</button>
-			<a id="content_log" href="#" class="navbar-brand"><img id="logo" src="assets/img/Logo/logotc.png"></a>	
+			<a id="content_log" href="#" class="navbar-brand"><img id="logo" src="assets/img/Logo/logoP.png"></a>	
 		</div>
 
 		<div class="collapse navbar-collapse menu-collapse" id="menu">
