@@ -69,7 +69,7 @@
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Sexo</label>
-							<select name="sexo" id="sexo" class="selectpicker">
+							<select name="sexo" id="sexo" class="form-control">
 								<option value ="M">Masculino</option>
 								<option value ="F">Femenino</option>	
 							</select>
@@ -94,7 +94,7 @@
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Tipo</label>
-							<select name="tipo" id="tipo" class="selectpicker">
+							<select name="tipo" id="tipo" class="form-control">
 								<option value ="Artesano">Artesano</option>
 								<option value ="Mueblero">Mueblero</option>
 								<option value ="Administrador">Administrador</option>	
@@ -102,7 +102,7 @@
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Estado</label>
-							<select name="estado" id="estado" class="selectpicker">
+							<select name="estado" id="estado" class="form-control">
 								<option value ="1">Activo</option>
 								<option value ="0">Desactivado</option>	
 							</select>
@@ -196,6 +196,6 @@
 	
 	<!--Scripts js-->
 	<?php include_once '../includes/jsInside.php';?>
-	<script type="text/javascript" src="../asset/js/funsionUsuario.js"></script>
+	<script src="../assets/js/funsionUsuario.js"></script>
 </body>
 </html>

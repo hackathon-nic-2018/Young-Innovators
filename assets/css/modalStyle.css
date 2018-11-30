@@ -1,0 +1,78 @@
+	/*Estilos para el contenedor del formulario de registro y edicion*/
+	.contenedor-registro{
+		border-radius: 10px;
+		background-color: #fff;
+		width: 90%;
+		max-width: 1100px;
+		min-width: 300px;
+		margin:0 auto;
+		border:1px solid #337AB7;
+	}
+
+	.contenedor-header{
+		border-top-right-radius: 6px;
+		border-top-left-radius:6px;
+		font-size: 16px;
+		background-color: #367FA9;
+		text-align: center;
+		height: 40px;
+		line-height: 37px;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+
+	
+
+	.contenedor-footer{
+		clear: both;
+		padding: 5px 10px;
+		text-align: center;
+	}
+
+	.cerrarModal{
+		margin: 8px;
+	}
+
+
+
+
+.spanAddon{
+	margin: 0;
+	padding: 0;
+}
+
+.dropMenuOption{
+	width: 100%;
+}
+
+.busquedaEnDropdown{
+	width: 98%;
+	margin: 5px auto;
+	padding-bottom: 40px;
+
+}
+
+.resultado{
+	overflow-y: auto;
+	width: 98%;
+	margin: 5px auto;
+	max-height: 150px;
+
+}
+
+.searchTable{
+	width: 100%;
+}
+
+.iconTd{
+	width: 30px;
+}
+
+/*Estilos para los inputs ocultos*/
+.input-oculto{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/*Fin*/

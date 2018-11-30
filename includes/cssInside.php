@@ -5,3 +5,4 @@
 <link rel="stylesheet" href="../assets/css/font-awesome.css">
 <link rel="stylesheet" href="../assets/css/estilos.css">
 <link rel="stylesheet" href="../assets/css/MyStyle.css">
+<link rel="stylesheet" href="../assets/css/modalStyle.css">

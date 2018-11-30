@@ -23,7 +23,7 @@
 		<li>
 			<div class="link"><i class="fa fa-cog"></i>Registros<span class="ico-badge badge">6</span><i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
-			<li><a href="usuario.php">Opcion1</a></li>
+			<li><a href="usuario.php">Usuarios</a></li>
 			<li><a href="docente.php">Opcion2</a></li>
 			<li><a href="estudiante.php">Opcion3</a></li>
 			<li><a href="asignatura.php">Opcion4</a></li>
