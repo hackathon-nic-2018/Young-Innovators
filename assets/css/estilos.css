@@ -75,7 +75,7 @@ body{
 /*estilos para el logo en el encabezado*/
 #logo{
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 10px;
 	height: 50px;
 	width: 50px;
 }
@@ -86,3 +86,26 @@ body{
 }
 
 /*Fin*/
+
+/*Estilo para barra de menu*/
+#barra{
+	background-color: #053D70;
+}
+
+#btn-menu{
+	background-color: #fff;
+	color: #000;
+}
+
+/*Estilo para el pie de pagina*/
+.pie{
+	z-index: 5;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 8px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #0071C1;	
+}

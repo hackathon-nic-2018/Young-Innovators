@@ -1,4 +1,4 @@
-<link rel="icon" type="image/jpeg" href="../assets/img/Logo/logo.jpeg">
+<link rel="icon" type="image/png" href="assets/img/Logo/logo.png">
 <link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/alertify.css">
 <link rel="stylesheet" href="assets/css/alertify-default.css">
