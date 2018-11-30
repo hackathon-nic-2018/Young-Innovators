@@ -62,10 +62,10 @@
 				</div>
 				<form autocomplete="off" id="formulario" class="formulario" onsubmit="return agregaUsuario();">
 				        <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Nombres</label><input type="text" required="required" name="nombre" class="form-control" id="nombre">
+							<label>Nombres</label><input type="text" required="required" name="nombres" class="form-control" id="nombre">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">			
-							<label>Apellidos</label><input type="text" required="required" name="apellido" class="form-control" id="apellido">
+							<label>Apellidos</label><input type="text" required="required" name="apellidos" class="form-control" id="apellido">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Sexo</label>
@@ -82,9 +82,6 @@
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Usuario</label><input type="text"  name="usuario" class="form-control" id="usuario">
-						</div>
-						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Clave</label><input type="password" required="required" name="clave" class="form-control" id="clave">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Direccion</label><input type="text" required="required" name="direccion" class="form-control" id="direccion">

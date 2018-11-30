@@ -8,18 +8,18 @@ session_start();
     header("location:../../index.php");
   }
 
-include('../conexion/conexion.php');
+include('../connection/conect.php');
 $id = $_POST['id'];
 $error='';
 if ($id==38) {
 	$error= "<script>
 	alertify.alert('Alerta!','No puedes desactivar usuario de maximo nivel');</script>";
 }else{
-$cans=mysqli_query($conexion, "SELECT * FROM cuenta WHERE estado='Activo' and id_cuenta='$id'");
+$cans=mysqli_query($conexion, "SELECT * FROM usuario WHERE estado='1' and id_usuario='$id'");
 if($dat=mysqli_fetch_array($cans)){
-	mysqli_query($conexion, "UPDATE cuenta SET  estado = 'Desactivado' WHERE id_cuenta = '$id'");
+	mysqli_query($conexion, "UPDATE usuario SET  estado = '0' WHERE id_usuario = '$id'");
 }else{
-	mysqli_query($conexion, "UPDATE cuenta SET  estado = 'Activo' WHERE id_cuenta = '$id'");
+	mysqli_query($conexion, "UPDATE usuario SET  estado = '1' WHERE id_usuario = '$id'");
 }
 }
 

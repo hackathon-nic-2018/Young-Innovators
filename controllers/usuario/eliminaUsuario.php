@@ -8,14 +8,14 @@ session_start();
     header("location:../../index.php");
   }
 
-include('../conexion/conexion.php');
+include('../connection/conect.php');
 
 $id = $_POST['id'];
 $error='';
 if ($id==38) {
 	$error= "<script>alertify.alert('Alerta!','No puedes eliminar el usuario de maximo nivel')</script>";
 }else{
-	mysqli_query($conexion, "DELETE FROM cuenta WHERE id_cuenta = '$id'");
+	mysqli_query($conexion, "DELETE FROM usuario WHERE id_usuario = '$id'");
 }
 
 include ('muestraResultadoUsuario.php');
