@@ -69,13 +69,13 @@ if ($id==38) {
 	   if (!is_numeric($telefono)) {
 		$error= "<script>alertify.alert('Alerta!','El campo telefono no debe contener letras')</script>";
 	}else{
-		mysqli_query($conexion, "UPDATE cuenta SET nombres = '$nombre', apellidos = '$apellido',fecha_nacimiento='$fecha_naci',sexo='$sexo',lugar_nacimiento='$lugar_naci',correo='$correo',telefono='$telefono', usuario = '$usuario', clave='$combinado', estado = '$estado',tipo = '$tipo' WHERE id_cuenta = '$id'");
+		mysqli_query($conexion, "UPDATE usuario SET nombres = '$nombre', apellidos = '$apellido',sexo='$sexo',telefono='$telefono',correo='$correo',usuario='$usuario',clave='$combinado', direccion = '$direccion', descripcion='$descripcion', tipo = '$tipo',estado = '$estado', imagen = '$imagen'  WHERE id_usuario = '$id'");
 	
 	$error= "<script>$('.mensaje').addClass('bien').html('Edicion completado con exito').show(200).delay(2500).hide(200);</script>";
 	}
 }else{
 
-	mysqli_query($conexion, "UPDATE cuenta SET nombres = '$nombre', apellidos = '$apellido',fecha_nacimiento='$fecha_naci',sexo='$sexo',lugar_nacimiento='$lugar_naci',correo='$correo',telefono='$telefono', usuario = '$usuario', clave='$combinado', estado = '$estado',tipo = '$tipo' WHERE id_cuenta = '$id'");
+	mysqli_query($conexion, "UPDATE cuenta SET nombres = '$nombres', apellidos = '$apellidos', sexo='$sexo', telefono='$telefono',correo='$correo',usuario='$usuario',clave='$combinado', direccion = '$direccion', descripcion='$descripcion', tipo = '$tipo',estado = '$estado', imagen = '$imagen' WHERE id_usuario = '$id'");
 	
 	$error= "<script>$('.mensaje').addClass('bien').html('Edicion completado con exito').show(200).delay(2500).hide(200);</script>";
 }

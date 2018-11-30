@@ -156,17 +156,17 @@ function editarUsuario(id){
 		success: function(valores){
 				var datos = eval(valores);
 				$('#edi').show();
-				$('#id_cuenta').val(id);
+				$('#id_usuario').val(id);
 				$('#edinombre').val(datos[0]);
 				$('#ediapellido').val(datos[1]);
-				$('#edifecha_naci').val(datos[2]);
 				$('#edisexo').val(datos[3]);
-				$('#edilugar_naci').val(datos[4]);
+				$('#editelefono').val(datos[2]);
 				$('#edicorreo').val(datos[5]);
-				$('#editelefono').val(datos[6]);
 				$('#ediusuario').val(datos[7]);
-				$('#ediestado').val(datos[8]);
+				$('#edidireccion').val(datos[8]);
+				$('#edidescripcion').val(datos[4]);
 				$('#editipo').val(datos[9]);
+				$('#ediestado').val(datos[4]);
 				$('#ediModUsuario').modal({
 					show:true,
 					backdrop:'static'
