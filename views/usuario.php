@@ -68,9 +68,6 @@
 							<label>Apellidos</label><input type="text" required="required" name="apellido" class="form-control" id="apellido">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Fecha Nacimiento</label><input type="date" required="required" name="fecha_naci" class="form-control" id="fecha_naci">
-						</div>
-						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Sexo</label>
 							<select name="sexo" id="sexo" class="selectpicker">
 								<option value ="M">Masculino</option>
@@ -78,30 +75,36 @@
 							</select>
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Lugar Nacimiento</label><input type="text" name="lugar_naci" class="form-control" id="lugar_naci">
+							<label>Telefono</label><input type="text" name="telefono" class="form-control" id="telefono">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Correo</label><input type="email" name="correo" class="form-control" id="correo">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Telefono</label><input type="number"  name="telefono" class="form-control" id="telefono">
+							<label>Usuario</label><input type="text"  name="usuario" class="form-control" id="usuario">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Usuario</label><input type="text" required="required" name="usuario" class="form-control" id="usuario">
+							<label>Clave</label><input type="password" required="required" name="clave" class="form-control" id="clave">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Estado</label>
-							<select name="estado" id="estado" class="selectpicker">
-								<option value ="Activo">Activo</option>
-								<option value ="Desactivado">Desactivado</option>
-							</select>
+							<label>Direccion</label><input type="text" required="required" name="direccion" class="form-control" id="direccion">
+						</div>
+						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<label>Descripcion</label><input type="text" required="required" name="descripcion" class="form-control" id="descripcion">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Tipo</label>
 							<select name="tipo" id="tipo" class="selectpicker">
-								<option value ="Estudiante">Estudiante</option>
-								<option value ="Docente">Docente</option>
+								<option value ="Artesano">Artesano</option>
+								<option value ="Mueblero">Mueblero</option>
 								<option value ="Administrador">Administrador</option>	
+							</select>
+						</div>
+						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<label>Estado</label>
+							<select name="estado" id="estado" class="selectpicker">
+								<option value ="1">Activo</option>
+								<option value ="0">Desactivado</option>	
 							</select>
 						</div>
 
@@ -124,16 +127,13 @@
 					<p><strong>Edicion Usuario</strong></p>
 				</div>
 				<form autocomplete="off" id="formularioEdi" class="formulario" onsubmit="return edicionUsuario();">
-							<input class="form-control input-oculto" type="text" required="required" readonly id="id_cuenta" name="id_cuenta" readonly="readonly" style="visibility:hidden; height:1px;"/>
+							<input class="form-control input-oculto" type="text" required="required" readonly id="id_usuario" name="id_usuario" readonly="readonly" style="visibility:hidden; height:1px;"/>
 
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Nombres</label><input type="text" required="required" name="nombre" class="form-control" id="edinombre">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">			
 							<label>Apellidos</label><input type="text" required="required" name="apellido" class="form-control" id="ediapellido">
-						</div>
-						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Fecha Nacimiento</label><input type="date" required="required" name="fecha_naci" class="form-control" id="edifecha_naci">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Sexo</label>
@@ -143,32 +143,39 @@
 							</select>
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Lugar Nacimiento</label><input type="text"  name="lugar_naci" class="form-control" id="edilugar_naci">
+							<label>Telefono</label><input type="number"  name="telefono" class="form-control" id="editelefono">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Correo</label><input type="email" name="correo" class="form-control" id="edicorreo">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Telefono</label><input type="number" name="telefono" class="form-control" id="editelefono">
+							<label>Usuario</label><input type="text" name="usuario" class="form-control" id="ediusuario">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Usuario</label><input type="text" required="required" name="usuario" class="form-control" id="ediusuario">
+							<label>Clave</label><input type="password" required="required" name="clave" class="form-control" id="ediclave">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<label>Estado</label>
-							<select name="estado" id="ediestado" class="form-control">
-								<option value ="Activo">Activo</option>
-								<option value ="Desactivado">Desactivado</option>
-							</select>
+							<label>Direccion</label><input type="text" required="required" name="direccion" class="form-control" id="edidireccion">
+						</div>
+						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<label>Descripcion</label><input type="text" required="required" name="descripcion" class="form-control" id="edidescripcion">
 						</div>
 						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<label>Tipo</label>
 							<select name="tipo" id="editipo" class="form-control">
-								<option value ="Estudiante">Estudiante</option>
-								<option value ="Docente">Docente</option>
+								<option value ="Artesano">Artesano</option>
+								<option value ="Mueblero">Mueblero</option>
 								<option value ="Administrador">Administrador</option>
 							</select>
 						</div>
+						<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<label>Estado</label>
+							<select name="estado" id="ediestado" class="selectpicker">
+								<option value ="1">Activo</option>
+								<option value ="0">Desactivado</option>	
+							</select>
+						</div>
+                    
 
 				   <div style="clear: both;" class="mensaje"></div>
 		           <div class="contenedor-footer">
@@ -184,11 +191,11 @@
 	</div>
 
 	<!--Pie de pagina-->
-	<?php include_once '../includes/footer.php';?>
+	<?php include_once '../includes/footerInside.php';?>
 
 	
 	<!--Scripts js-->
-	<?php include_once '../includes/js.php';?>
+	<?php include_once '../includes/jsInside.php';?>
 	<script type="text/javascript" src="../asset/js/funsionUsuario.js"></script>
 </body>
 </html>
