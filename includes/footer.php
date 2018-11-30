@@ -15,5 +15,5 @@ function fecha(){
     <div class="pull-right hidden-xs">
       <!--<b>Version</b> 1.0-->
     </div>
-	<strong>Copyright &copy; 2018<?php fecha();?>, Tesoros del caribe.</strong> Derechos reservados.
+	<p style="color:#fff; font-size: 16px;"><strong>Copyright &copy; 2018<?php fecha();?>, Tesoros del caribe.</strong> Derechos reservados.</p>
 </footer>

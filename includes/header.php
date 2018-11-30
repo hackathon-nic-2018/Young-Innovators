@@ -1,8 +1,8 @@
 	<!--Encabezado y barra menu de navegacion-->
 	<header>
-		<nav class="navbar navbar-default navbar-fixed-top" id="barra">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" id="barra">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+			<button id="btn-menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
 				<span class="sr-only">Menu</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -14,10 +14,10 @@
 
 		<div class="collapse navbar-collapse menu-collapse" id="menu">
 			<ul class="nav navbar-nav">
-				<li><a href=""><i class="fa fa-home"></i> <b>Inicio</b></a></li>
-				<li><a href=""><i class="fa fa-home"></i> <b>productos</b></a></li>
+				<li><a href=""><b id="menu-text"><i class="fa fa-home"></i> Inicio</b></a></li>
+				<li><a href=""><b id="menu-text"><i class="fa fa-home"></i> productos</b></a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b><i class="fa fa-cog"></i> Opcion 1 <span class="caret"></span></b>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b id="menu-text"><i class="fa fa-cog"></i> Opcion 1 <span class="caret"></span></b>
 					</a>
 
 					<ul class="dropdown-menu">
@@ -29,7 +29,7 @@
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b><i class="fa fa-cog"></i> Opcion 2 <span class="caret"></span></b>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><b id="menu-text"><i class="fa fa-cog"></i> Opcion 2 <span class="caret"></span></b>
 					</a>
 
 					<ul class="dropdown-menu">
