@@ -9,6 +9,7 @@ session_start();
   }
 
 include('../conexion/conexion.php');
+$id = $_POST['id_cuenta'];
 $dato1 = strtolower($_POST['nombre']);
 $nombre=mysqli_real_escape_string($conexion, ucwords($dato1));
 $dato2 = strtolower($_POST['apellido']);
@@ -25,14 +26,11 @@ $estado = mysqli_real_escape_string($conexion, $_POST['estado']);
 $cadena = '@Asd:-)!Axkdi%';
 $combinado = sha1($cadena.$clave);
 $foto = 'defecto.jpg';
-$fecha = date("Y-m-d");
 
-$registro = mysqli_query($conexion, "SELECT usuario FROM cuenta WHERE usuario='$usuario'");
-$result= mysqli_num_rows($registro);
 $error='';
-if ($result==1) {
-	$error= "<script>alertify.alert('Alerta!','El usuario que intentas registrar ya esta registrado')</script>";
-	
+if ($id==38) {
+	$error= "<script>alertify.alert('Alerta!','No puedes Editar usuario de maximo nivel');</script>";
+
 }elseif (empty($_POST['nombre']) || empty($_POST['apellido']) || empty($_POST['fecha_naci']) || empty($_POST['usuario']) || empty($_POST['estado']) || empty($_POST['tipo'])) {
 	$error= "<script>alertify.alert('Alerta!','Los campos nombres, apellidos, fecha_nacimiento,usuario,estado y tipo , son requeridos')</script>";
 
@@ -54,20 +52,22 @@ if ($result==1) {
 }
 else{
 	if (!empty($telefono)) {
-	if (!is_numeric($telefono)) {
+	   if (!is_numeric($telefono)) {
 		$error= "<script>alertify.alert('Alerta!','El campo telefono no debe contener letras')</script>";
 	}else{
-		mysqli_query($conexion, "INSERT INTO cuenta (nombres, apellidos, fecha_nacimiento, sexo, lugar_nacimiento, correo, telefono, usuario, clave, estado, tipo, foto, fecha)VALUES('$nombre','$apellido','$fecha_naci','$sexo','$lugar_naci','$correo','$telefono','$usuario','$combinado', '$estado', '$tipo', '$foto', '$fecha')");
-	$error= "<script>$('.mensaje').addClass('bien').html('Registro completado con exito').show(200).delay(2500).hide(200);</script>";
-	}
+		mysqli_query($conexion, "UPDATE cuenta SET nombres = '$nombre', apellidos = '$apellido',fecha_nacimiento='$fecha_naci',sexo='$sexo',lugar_nacimiento='$lugar_naci',correo='$correo',telefono='$telefono', usuario = '$usuario', clave='$combinado', estado = '$estado',tipo = '$tipo' WHERE id_cuenta = '$id'");
 	
+	$error= "<script>$('.mensaje').addClass('bien').html('Edicion completado con exito').show(200).delay(2500).hide(200);</script>";
+	}
 }else{
-	mysqli_query($conexion, "INSERT INTO cuenta (nombres, apellidos, fecha_nacimiento, sexo, lugar_nacimiento, correo, telefono, usuario, clave, estado, tipo, foto, fecha)VALUES('$nombre','$apellido','$fecha_naci','$sexo','$lugar_naci','$correo','$telefono','$usuario','$combinado', '$estado', '$tipo', '$foto', '$fecha')");
-	$error= "<script>$('.mensaje').addClass('bien').html('Registro completado con exito').show(200).delay(2500).hide(200);</script>";
+
+	mysqli_query($conexion, "UPDATE cuenta SET nombres = '$nombre', apellidos = '$apellido',fecha_nacimiento='$fecha_naci',sexo='$sexo',lugar_nacimiento='$lugar_naci',correo='$correo',telefono='$telefono', usuario = '$usuario', clave='$combinado', estado = '$estado',tipo = '$tipo' WHERE id_cuenta = '$id'");
+	
+	$error= "<script>$('.mensaje').addClass('bien').html('Edicion completado con exito').show(200).delay(2500).hide(200);</script>";
+}
 }
 
-}
-
+	
 include ('muestraResultadoUsuario.php');
 //CREAMOS NUESTRA VISTA Y LA DEVOLVEMOS AL AJAX
 $array = array(0 => $tab, 1 => $lista, 2 => $detalle, 3 => $nroLotes, 4 => $nroUsuarios, 5 => $error,6 => $Anterior, 7 => $Siguiente);
