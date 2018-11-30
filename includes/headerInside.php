@@ -11,7 +11,12 @@
 
 ?>
 <header class="encabezado">
-	<label class="fa fa-bars" id="mostrar-menu"></label> <p id="corto">Tesoros del caribe</p> <p id="largo" style="font-size: 20px;">TESOROS DEL CARIBE</p>
+
+	<label class="fa fa-bars" id="mostrar-menu"></label> 
+
+	<a id="content_log" href="#" class="navbar-brand"><img id="logo_inside" src="../assets/img/Logo/logo.png"></a>
+
+	<p id="corto">T.C</p> <p id="largo" style="font-size: 20px;">TESOROS DEL CARIBE</p>
 	
 	<div class="dropdown pull-right">
 	<a class="logout dropdown-toggle" id="dropdown1" data-toggle="dropdown" role="button" href="#"><img class="img-responsive img-circle" id="foto-usuario" src="../assets/img/foto-usuario/<?php echo''.$registro2["imagen"].''?>" width="27" height="25"><span id="nombre-usuario"><?php echo $primerNom.' '.$primerApe?></span> <span class="caret"></span></a>

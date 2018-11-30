@@ -1,5 +1,7 @@
 /* abre el modal para inicio de sesion*/
 $('#login').click(function(){
+
+  $('#formulario-login')[0].reset();
  
 $('#ModLogin').modal({
 	show:true,

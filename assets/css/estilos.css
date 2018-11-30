@@ -72,7 +72,7 @@ body{
 /*Fin*/
 
 
-/*estilos para el logo en el encabezado*/
+/*estilos para el logo en el encabezado vista de afuera*/
 #logo{
 	margin-left: 20px;
 	margin-right: 10px;
@@ -80,12 +80,23 @@ body{
 	width: 50px;
 }
 
+/*estilos para el logo en el encabezado vista de adentro*/
+#logo_inside{
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+/* estilo para el logo en la vista de afuera*/
 #content_log{
 	margin: 0;
 	padding: 0;
 }
 
 /*Fin*/
+
+
 
 /*Estilo para barra de menu*/
 #barra{
