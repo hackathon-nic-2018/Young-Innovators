@@ -119,7 +119,36 @@ body{
 }
 
 
-
+/*Color para los textos del menu de navegacion*/
 #menu-text{
 	color: #fff;
 }
+
+
+/*Estilos para el contenedor de datos de los registros*/
+	.contenedor{
+		margin-top: 50px;
+	}
+
+	.dataPanel{
+		overflow-x: auto;
+		margin-top: 5px;
+		padding-bottom: 14px; 
+	}
+/*Fin*/
+
+
+/*Estilo a los badge de bootstrap*/
+.ico-badge{
+		background-color: rgba(70,239,131,0.72);
+		box-sizing: border-box;
+		font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+		font-size: 11px;
+		padding: 0px 6px;
+		float: right;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 3px;
+		margin-right: 19px;
+	}
+/*Fin*/

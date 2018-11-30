@@ -21,14 +21,10 @@
 			<a class="link" href="foro.php"><i class="fa fa-wpforms "></i>Producto</a>
 		</li>
 		<li>
-			<div class="link"><i class="fa fa-cog"></i>Registros<span class="ico-badge badge">6</span><i class="fa fa-chevron-down"></i></div>
+			<div class="link"><i class="fa fa-cog"></i>Registros<span class="ico-badge badge">2</span><i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
 			<li><a href="usuario.php">Usuarios</a></li>
-			<li><a href="docente.php">Opcion2</a></li>
-			<li><a href="estudiante.php">Opcion3</a></li>
-			<li><a href="asignatura.php">Opcion4</a></li>
-			<li><a href="nota1.php">Opcion5</a></li>
-			<li><a href="nota2.php">Opcion6</a></li>
+			<li><a href="producto.php">Productos</a></li>
 			</ul>
 		</li>
 		<li>
