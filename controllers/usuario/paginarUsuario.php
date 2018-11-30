@@ -8,9 +8,9 @@ if (!isset($_POST['partida'])) {
     header("location:../../index.php");
   }
 
-include('../conexion/conexion.php');
+include('../connection/conect.php');
   $paginaActual = $_POST['partida'];
-    $nroUsuarios = mysqli_num_rows(mysqli_query($conexion, "SELECT * FROM cuenta"));
+    $nroUsuarios = mysqli_num_rows(mysqli_query($conexion, "SELECT * FROM usuario"));
     $nroLotes = 10;
     $nroPaginas = ceil($nroUsuarios/$nroLotes);
     $Anterior='';
@@ -41,42 +41,48 @@ include('../conexion/conexion.php');
   		$limit = $nroLotes*($paginaActual-1);
   	}
 
-  	$registro = mysqli_query($conexion, "SELECT * FROM cuenta ORDER BY id_cuenta DESC LIMIT $limit, $nroLotes");
+  	$registro = mysqli_query($conexion, "SELECT * FROM usuario ORDER BY id_usuario DESC LIMIT $limit, $nroLotes");
 
 
   	$tabla = $tabla.'<table class="table table-striped table-condensed table-hover table-bordered">
                       <tr>
                       <th scope="col">Nombres</th>
                       <th scope="col">Apellidos</th>
-                      <th scope="col">Fecha Nacimiento</th>
                       <th scope="col">Sexo</th>
-                      <th scope="col">Lugar Nacimiento</th>
-                      <th scope="col">Correo</th>
                       <th scope="col">Telefono</th>
+                      <th scope="col">Correo</th>
                       <th scope="col">Usuario</th>
-                      <th scope="col">Estado</th>
+                      <th scope="col">Direccion</th>
+                      <th scope="col">Descripcion</th>
                       <th scope="col">Tipo</th>
-                      <th scope="col">Fecha Registro</th>
+                      <th scope="col">Estado</th>
+                      <th scope="col">Fecha de resgistro</th>
                       <th scope="col" colspan="2">Acciones</th>
                         </tr>';
 
 	while($registro2 = mysqli_fetch_array($registro)){
-    $editar = '<button title="Editar" onClick="javascript:editarUsuario('.$registro2['id_cuenta'].');" class="btn btn-warning btn-xs">Editar</button>';
+    $editar = '<button title="Editar" onClick="javascript:editarUsuario('.$registro2['id_usuario'].');" class="btn btn-warning btn-xs">Editar</button>';
 
-    $eliminar = '<button title="Eliminar" onClick="javascript:eliminarUsuario('.$registro2['id_cuenta'].');" class="btn btn-danger btn-xs">Eliminar</button>';
+    $eliminar = '<button title="Eliminar" onClick="javascript:eliminarUsuario('.$registro2['id_usuario'].');" class="btn btn-danger btn-xs">Eliminar</button>';
+
+    if ($registro2['estado']=='1') {
+      $estado = 'Activo';
+    }else{
+      $estado = 'Desactivado';
+    }
 
 		$tabla = $tabla.'<tr>
                         <td>'.$registro2['nombres'].'</td>
                         <td>'.$registro2['apellidos'].'</td>
-                        <td>'.date('d/m/Y',strtotime($registro2['fecha_nacimiento'])).'</td>
                         <td>'.$registro2['sexo'].'</td>
-                        <td>'.$registro2['lugar_nacimiento'].'</td>
-                        <td>'.$registro2['correo'].'</td>
                         <td>'.$registro2['telefono'].'</td>
+                        <td>'.$registro2['correo'].'</td>
                         <td>'.$registro2['usuario'].'</td>
-                        <td><input id="'.$registro2['id_cuenta'].'" onclick="activaDesactiva('.$registro2['id_cuenta'].')" class="btn btn-warning btn-xs" type="button" name="boton" value="'.$registro2['estado'].'"></td> 
+                        <td>'.$registro2['direccion'].'</td>
+                        <td>'.$registro2['descripcion'].'</td>
                         <td>'.$registro2['tipo'].'</td>
-                        <td>'.date('d/m/Y',strtotime($registro2['fecha'])).'</td>
+                        <td><input id="'.$registro2['id_usuario'].'" onclick="activaDesactiva('.$registro2['id_usuario'].')" class="btn btn-warning btn-xs" type="button" name="boton" value="'.$estado.'"></td> 
+                        <td>'.date('d/m/Y',strtotime($registro2['fecha_registro'])).'</td>
                         <td>'.$editar.'</td>
                         <td>'.$eliminar.'</td>
     </tr>';		
