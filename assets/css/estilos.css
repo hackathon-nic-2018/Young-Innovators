@@ -152,3 +152,46 @@ body{
 		margin-right: 19px;
 	}
 /*Fin*/
+
+
+/*Eestilos para el select personalizado*/
+.spanAddon{
+	margin: 0;
+	padding: 0;
+}
+
+.dropMenuOption{
+	width: 100%;
+}
+
+.busquedaEnDropdown{
+	width: 98%;
+	margin: 5px auto;
+	padding-bottom: 40px;
+
+}
+
+.resultado{
+	overflow-y: auto;
+	width: 98%;
+	margin: 5px auto;
+	max-height: 150px;
+
+}
+
+.searchTable{
+	width: 100%;
+}
+
+.iconTd{
+	width: 30px;
+}
+
+/*Estilos para los inputs ocultos*/
+.input-oculto{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/*Fin*/

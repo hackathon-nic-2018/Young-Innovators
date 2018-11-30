@@ -9,7 +9,7 @@
 	<?php include_once 'includes/header.php';?>
 
 <section  style="background-image: url(assets/img/fondo.jpg);">
-	<div  style="height: 100%; background-clip: ">
+	<div  style="height: 100%; background-color: rgba(255,255,255,6); padding: 10px 0, margin-right: -1px, margin-left: -1px;">
 
 	<div class="container">
 
@@ -95,7 +95,7 @@
 			</div>
 
 		</div>
-		
+		</div>
 
 	</div>
 
